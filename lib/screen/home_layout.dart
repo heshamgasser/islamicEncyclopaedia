@@ -37,6 +37,7 @@ class HomeLayout extends StatelessWidget {
               ),
             ),
 
+          body: homeProvider.tabs[homeProvider.selectedIndex],
 
             bottomNavigationBar: ClipRRect(
               borderRadius: BorderRadius.only(
