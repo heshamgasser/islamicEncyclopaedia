@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran/provider/app_provider.dart';
 import 'package:quran/screen/home_layout.dart';
+import 'package:quran/screen/views/hadeth_list.dart';
 import 'package:quran/style/app_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -47,6 +48,7 @@ class Quran extends StatelessWidget {
           initialRoute: HomeLayout.routeName,
           routes: {
             HomeLayout.routeName: (context) => HomeLayout(),
+            HadethList.routeName: (context) => HadethList(),
           },
         );
       },

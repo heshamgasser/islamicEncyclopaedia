@@ -14,14 +14,14 @@ class AppText {
   static TextStyle titleSmall = GoogleFonts.elMessiri(
       fontSize: 20.sp, fontWeight: FontWeight.bold, color: Colors.white);
 
-  static TextStyle displayLarge = GoogleFonts.reemKufi(
+  static TextStyle displayLarge = GoogleFonts.notoKufiArabic(
       fontSize: 25.sp, fontWeight: FontWeight.bold, color: Colors.white);
 
   static TextStyle displayMedium = GoogleFonts.notoKufiArabic(
       fontSize: 20.sp, fontWeight: FontWeight.normal, color: Colors.white);
 
-  // static TextStyle displaySmall = GoogleFonts.notoKufiArabic(
-  //     fontSize: 20.sp, fontWeight: FontWeight.normal, color: Colors.white);
+  static TextStyle displaySmall = GoogleFonts.notoKufiArabic(
+      fontSize: 16.sp, fontWeight: FontWeight.normal, color: Colors.white);
 
 
 
