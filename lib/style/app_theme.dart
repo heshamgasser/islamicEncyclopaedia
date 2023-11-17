@@ -40,7 +40,6 @@ class AppTheme {
 
 
 
-
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       showSelectedLabels: true,
       type: BottomNavigationBarType.shifting,

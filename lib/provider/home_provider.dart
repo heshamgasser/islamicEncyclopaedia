@@ -4,6 +4,7 @@ import 'package:quran/screen/tabs/hadeth_tab.dart';
 import 'package:quran/screen/tabs/quran_tab.dart';
 import 'package:quran/screen/tabs/setting_tab.dart';
 
+
 class HomeProvider extends ChangeNotifier{
 
   int selectedIndex = 0;
@@ -15,6 +16,6 @@ class HomeProvider extends ChangeNotifier{
 
 
   List<Widget> tabs = [QuranTab(), HadethTab(), AzkarTab(), SettingsTab()];
-  List<String> tabsTitle = ['Quran', 'Hadeth', 'Azkar', 'Settings'];
+  List<String> tabsTitle = ['quran', 'hadeth', 'azkar', 'settings'];
 
 }

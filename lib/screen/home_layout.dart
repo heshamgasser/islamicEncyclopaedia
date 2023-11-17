@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
 import 'package:quran/provider/home_provider.dart';
 import 'package:quran/style/app_color.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeLayout extends StatelessWidget {
   static const String routeName = 'Home Layout';
@@ -30,7 +31,7 @@ class HomeLayout extends StatelessWidget {
               title: Column(
                 children: [
                   Text(
-                    homeProvider.tabsTitle[homeProvider.selectedIndex],
+                    AppLocalizations.of(context)!.islamic,
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
 
@@ -39,7 +40,6 @@ class HomeLayout extends StatelessWidget {
             ),
 
           body: homeProvider.tabs[homeProvider.selectedIndex],
-
             bottomNavigationBar: ClipRRect(
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(20.r),
@@ -57,23 +57,23 @@ class HomeLayout extends StatelessWidget {
                       icon: ImageIcon(
                         AssetImage('assets/images/quran.png'),
                       ),
-                      label: homeProvider.tabsTitle[0],
+                      label:  AppLocalizations.of(context)!.quran,
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: ImageIcon(
                         AssetImage('assets/images/hadeth.png'),
                       ),
-                      label:  homeProvider.tabsTitle[1],
+                      label:  AppLocalizations.of(context)!.hadeth,
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: ImageIcon(
                         AssetImage('assets/images/sebha.png'),
                       ),
-                      label:  homeProvider.tabsTitle[2],
+                      label:  AppLocalizations.of(context)!.azkar,
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: Icon(Icons.settings),
-                      label:  homeProvider.tabsTitle[3],
+                      label:  AppLocalizations.of(context)!.settings,
                       backgroundColor: AppColor.lightBlue),
                 ],
               ),
