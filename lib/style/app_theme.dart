@@ -15,11 +15,21 @@ class AppTheme {
       centerTitle: true,
       backgroundColor: Colors.transparent,
       elevation: 0,
-      iconTheme: IconThemeData(size: 30.r, color: Colors.black,),
+      iconTheme: IconThemeData(size: 30.r, color: Colors.white,),
     ),
 
     textTheme: TextTheme(
-      titleLarge: AppText.titleLarge
+      titleLarge: AppText.titleLarge,
+      titleMedium: AppText.titleMedium,
+      titleSmall: AppText.titleSmall,
+
+      displayLarge: AppText.displayLarge,
+      displayMedium: AppText.displayMedium,
+      displaySmall: AppText.displaySmall,
+
+      labelLarge: AppText.labelLarge,
+      labelMedium: AppText.labelMedium,
+      labelSmall: AppText.labelSmall
     ),
 
    dividerTheme: DividerThemeData(
@@ -28,7 +38,6 @@ class AppTheme {
      indent: 40.w,
      endIndent: 40.w
    ),
-
 
 
 
