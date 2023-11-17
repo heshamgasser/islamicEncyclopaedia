@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:provider/provider.dart';
+import 'package:quran/provider/app_provider.dart';
 import 'package:quran/screen/widget/hadeth_category_item.dart';
 import 'package:quran/shared/hadeth_api_manager.dart';
 import 'package:quran/style/app_color.dart';
@@ -9,11 +11,11 @@ class HadethTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+      var appProvider = Provider.of<AppProvider>(context);
     return
 
 
-      FutureBuilder(future: HadithAPIFucnction.getHadithCategory(), builder: (context, snapshot) {
+      FutureBuilder(future: HadithAPIFucnction.getHadithCategory(appProvider.languageCode), builder: (context, snapshot) {
       print(snapshot.data?[1]);
       if (snapshot.connectionState == ConnectionState.waiting){
         return Center(child: CircularProgressIndicator(),);

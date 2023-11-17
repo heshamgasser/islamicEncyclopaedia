@@ -20,6 +20,12 @@ class AppTheme {
 
     textTheme: TextTheme(
       titleLarge: AppText.titleLarge,
+      titleMedium: AppText.titleMedium,
+      titleSmall: AppText.titleSmall,
+
+      displayLarge: AppText.displayLarge,
+      displayMedium: AppText.displayMedium,
+
       labelLarge: AppText.labelLarge,
       labelMedium: AppText.labelMedium,
       labelSmall: AppText.labelSmall
@@ -28,10 +34,9 @@ class AppTheme {
    dividerTheme: DividerThemeData(
      color: Colors.white,
      thickness: 3.r,
-     indent: 50.w,
-     endIndent: 50.w
+     indent: 100.w,
+     endIndent: 100.w
    ),
-
 
 
 

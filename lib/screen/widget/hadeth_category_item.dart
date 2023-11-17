@@ -24,7 +24,7 @@ class HadethCategoryItems extends StatelessWidget {
         decoration: BoxDecoration(borderRadius: BorderRadius.circular(20.r),
             color: categoryColor
         ),
-        child: Center(child: Text(categoryItem, style: Theme.of(context).textTheme.labelMedium,),),
+        child: Center(child: Text(categoryItem, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),),
       ),
     );
   }
