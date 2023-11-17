@@ -10,7 +10,7 @@ class HadithAPIFucnction {
     Uri url = Uri.https(
       hadethBaseUrl,
       hadethCategoryEndPoint,
-      {'language': 'ar'},
+      {'language': 'en'},
     );
     Response response = await http.get(url);
     var jsonResponse = (jsonDecode(response.body) as List)
@@ -25,7 +25,7 @@ class HadithAPIFucnction {
     Uri url = Uri.https(
       hadethBaseUrl,
       hadethCategoryEndPoint,
-      {'language': 'ar'},
+      {'language': 'en'},
     );
     Response response = await http.get(url);
   }

@@ -13,7 +13,7 @@ class AppText {
       fontWeight: FontWeight.bold,
       color: AppColor.boldDarkBlue);
   static TextStyle labelMedium = GoogleFonts.poppins(
-      fontSize: 24.sp, fontWeight: FontWeight.bold, color: Colors.white);
+      fontSize: 18.sp, fontWeight: FontWeight.bold, color: Colors.white);
   static TextStyle labelSmall = GoogleFonts.poppins(
       fontSize: 12.sp,
       fontWeight: FontWeight.bold,

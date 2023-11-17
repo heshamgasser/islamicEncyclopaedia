@@ -30,7 +30,7 @@ class HomeLayout extends StatelessWidget {
               title: Column(
                 children: [
                   Text(
-                    'الموسوعة الإسلامية',
+                    'Islamic',
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
                   Divider(),

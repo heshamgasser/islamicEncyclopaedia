@@ -28,8 +28,8 @@ class AppTheme {
    dividerTheme: DividerThemeData(
      color: Colors.white,
      thickness: 3.r,
-     indent: 50.w,
-     endIndent: 50.w
+     indent: 100.w,
+     endIndent: 100.w
    ),
 
 
