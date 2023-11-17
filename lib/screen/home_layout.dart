@@ -26,6 +26,7 @@ class HomeLayout extends StatelessWidget {
           child: Scaffold(
             extendBody: true,
             appBar: AppBar(
+              automaticallyImplyLeading: false,
               title: Column(
                 children: [
                   Text(

@@ -19,14 +19,17 @@ class AppTheme {
     ),
 
     textTheme: TextTheme(
-      titleLarge: AppText.titleLarge
+      titleLarge: AppText.titleLarge,
+      labelLarge: AppText.labelLarge,
+      labelMedium: AppText.labelMedium,
+      labelSmall: AppText.labelSmall
     ),
 
    dividerTheme: DividerThemeData(
      color: Colors.white,
      thickness: 3.r,
-     indent: 40.w,
-     endIndent: 40.w
+     indent: 50.w,
+     endIndent: 50.w
    ),
 
 
