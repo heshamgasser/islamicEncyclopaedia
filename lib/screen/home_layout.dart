@@ -30,10 +30,10 @@ class HomeLayout extends StatelessWidget {
               title: Column(
                 children: [
                   Text(
-                    'Islamic',
+                    homeProvider.tabsTitle[homeProvider.selectedIndex],
                     style: Theme.of(context).textTheme.titleLarge,
                   ),
-                  Divider(),
+
                 ],
               ),
             ),
@@ -57,23 +57,23 @@ class HomeLayout extends StatelessWidget {
                       icon: ImageIcon(
                         AssetImage('assets/images/quran.png'),
                       ),
-                      label: 'Quran',
+                      label: homeProvider.tabsTitle[0],
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: ImageIcon(
                         AssetImage('assets/images/hadeth.png'),
                       ),
-                      label: 'Hadeth',
+                      label:  homeProvider.tabsTitle[1],
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: ImageIcon(
                         AssetImage('assets/images/sebha.png'),
                       ),
-                      label: 'Azkar',
+                      label:  homeProvider.tabsTitle[2],
                       backgroundColor: AppColor.lightBlue),
                   BottomNavigationBarItem(
                       icon: Icon(Icons.settings),
-                      label: 'Settings',
+                      label:  homeProvider.tabsTitle[3],
                       backgroundColor: AppColor.lightBlue),
                 ],
               ),

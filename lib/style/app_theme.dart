@@ -20,6 +20,12 @@ class AppTheme {
 
     textTheme: TextTheme(
       titleLarge: AppText.titleLarge,
+      titleMedium: AppText.titleMedium,
+      titleSmall: AppText.titleSmall,
+
+      displayLarge: AppText.displayLarge,
+      displayMedium: AppText.displayMedium,
+
       labelLarge: AppText.labelLarge,
       labelMedium: AppText.labelMedium,
       labelSmall: AppText.labelSmall

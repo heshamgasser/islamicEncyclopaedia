@@ -15,5 +15,6 @@ class HomeProvider extends ChangeNotifier{
 
 
   List<Widget> tabs = [QuranTab(), HadethTab(), AzkarTab(), SettingsTab()];
+  List<String> tabsTitle = ['Quran', 'Hadeth', 'Azkar', 'Settings'];
 
 }
