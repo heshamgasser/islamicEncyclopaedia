@@ -42,23 +42,19 @@ class HadithDetail extends StatelessWidget {
         return ListView(
           padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 15.h),
           children: [
-            // Text(
-            //   hadithDetailItem?.title ?? '',
-            //   style: Theme.of(context).textTheme.displayLarge,
-            // ),
-            // SizedBox(height: 10.h),
+            Image(
+              image: AssetImage('assets/images/hadith.png'),
+            ),
             Text(
               hadithDetailItem?.hadeeth ?? '',
               style: Theme.of(context).textTheme.displayMedium,
             ),
-
             Text(
               hadithDetailItem?.attribution ?? '',
               style: Theme.of(context).textTheme.displaySmall,
               textAlign: TextAlign.end,
             ),
             Divider(),
-
             ListView.separated(
                 shrinkWrap: true,
                 physics: ClampingScrollPhysics(),
@@ -77,7 +73,7 @@ class HadithDetail extends StatelessWidget {
                         style: Theme.of(context)
                             .textTheme
                             .displaySmall!
-                            .copyWith(color:Colors.black),
+                            .copyWith(color: Colors.black),
                       ),
                       Expanded(
                         child: Text(

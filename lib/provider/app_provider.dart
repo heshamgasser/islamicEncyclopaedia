@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppProvider extends ChangeNotifier{
   bool arabicSelected = false;
-  String languageCode = 'en';
+  String languageCode = 'ar';
 
 
   void changeArabicSelected (bool value){
